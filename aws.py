@@ -15,8 +15,7 @@ import urllib
 import boto3
 import os
 
-ec2 = boto3.client('ec2',
-)
+ec2 = boto3.client('ec2')
 
 print("Regions: ", end=" ")
 regions = ec2.describe_regions()['Regions']
