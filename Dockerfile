@@ -1,11 +1,11 @@
 FROM alpine:latest
-MAINTAINER pve@clubcloudcomputing.com 
-LABEL vendor=www.clubcloudcomputing.com
+MAINTAINER m.mezhoud@gmail.com 
+LABEL vendor=https://github.com/hunteratonoud
 
 RUN apk add --update py-pip
 RUN apk add git
 
-RUN git clone https://github.com/pve/state-of-cloud.git
+RUN git clone https://github.com/hunteratonoud/state-of-cloud.git
 RUN pip install --no-cache-dir -r state-of-cloud/requirements.txt
 
 ENV AWS_DEFAULT_REGION eu-west-1
