@@ -1,7 +1,7 @@
 from __future__ import print_function
 
 # a demonstration to pull descriptive information out of AWS
-# By Peter HJ van Eijk 
+# By Malek
 
 # uses env variables for AWS authentication.
 # preparation:
