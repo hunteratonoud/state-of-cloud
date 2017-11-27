@@ -37,7 +37,3 @@ Regions:  ['eu-west-1', 'ap-southeast-1', 'ap-southeast-2', 'eu-central-1', 'ap-
 Zones:  [['eu-west-1a', 'available'], ['eu-west-1b', 'available'], ['eu-west-1c', 'available']]
 (output of describe_instances)
 (S3 bucket list)
-
-```
-[![](https://images.microbadger.com/badges/image/petersgriddle/state-of-cloud.svg)](https://microbadger.com/images/petersgriddle/state-of-cloud "Get your own image badge on microbadger.com")
-
