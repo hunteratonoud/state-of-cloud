@@ -17,15 +17,15 @@ import os
 
 ec2 = boto3.client('ec2')
 
-print("Regions: ", end=" ")
+print("[ Regions ] : ", end=" ")
 regions = ec2.describe_regions()['Regions']
 regionnames = [x.get('RegionName', []) for x in regions]
-print(regionnames)
-print("Zones: ", end=" "),
+print(" + " ,regionnames)
+print("[ Zones ] : ", end=" "),
 # print(ec2.describe_availability_zones()['AvailabilityZones'])
 zones = ec2.describe_availability_zones()['AvailabilityZones']
 zonenames = [[x.get('ZoneName', []),x.get('State', [])] for x in zones]
-print(zonenames)
+print(" + ",zonenames)
 
 def reservations():
     for region in regions:
@@ -41,7 +41,7 @@ def reservations():
 reservations()
 
 
-print("S3 buckets...")
+print("[ S3 buckets] :")
 s3 = boto3.client('s3')
 s3 = boto3.resource('s3')
 
